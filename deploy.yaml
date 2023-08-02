@@ -10,13 +10,12 @@ spec:
   template:
     metadata:
       labels:
-        app: aks-helloworld-on
+        app: aks-helloworld-one
     spec:
       containers:
       - name: aks-helloworld-one
-        image: mcr.microsoft.com/azuredocs/aks-helloworld:v1
-        ports:
-        - containerPort: 80
-        env:
-        - name: TITLE
-          value: "Welcome to Azure Kubernetes Service (AKS)"
+        image: nginx:1.25.1-alpine
+        command:
+         - sh
+         - -c
+         - sleep 1000
