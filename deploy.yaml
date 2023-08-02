@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: aks-helloworld-one
+        app: aks-helloworld-on
     spec:
       containers:
       - name: aks-helloworld-one
